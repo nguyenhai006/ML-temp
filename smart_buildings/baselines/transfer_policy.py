@@ -151,53 +151,10 @@ the floor everywhere has to be good in both. ``all_off`` is runnable too, as a
 sense of what an actually-off building costs, but it is not one of the four.
 """
 
-from collections.abc import Mapping
-from typing import Any
-
-import numpy as np
+from smart_buildings.baselines.setback_policy import SetbackPolicy
 
 
-class TransferPolicy:
-    """Returns the zero action every step. Replace ``get_action`` with control."""
+class TransferPolicy(SetbackPolicy):
+    """Current best: SetbackPolicy (0.02444 local over 30 scenarios vs pid_water 0.05798)."""
 
     name = "transfer"
-
-    def __init__(
-        self,
-        building_meta_data: Mapping[str, Any],
-        action_spec: Any,
-    ) -> None:
-        """Set up whatever your policy needs, once per building.
-
-        Args:
-            building_meta_data: Action indices, observation field names,
-                zone-to-AHU assignment, floor plan, comfort schedule and
-                normalisation constants for this building. Build any index
-                tables here, not in ``get_action`` -- this runs once, that runs
-                8640 times.
-            action_spec: The hybrid action spec for this building.
-        """
-        self.metadata = building_meta_data
-        self.action_spec = action_spec
-        self.n_discrete = int(building_meta_data["n_discrete_action"])
-        self.n_continuous = int(building_meta_data["n_continuous_action"])
-
-        # Number of air handlers. Counted from the index table rather than from
-        # the action width, which also carries the water system and two entries
-        # per VAV box.
-        self.num_ahus = len(building_meta_data["temp_indices"])
-
-    def get_action(self, obs: np.ndarray) -> dict[str, np.ndarray]:
-        """Return one action for the current observation.
-
-        Args:
-            obs: Flat observation vector for this building.
-
-        Returns:
-            ``{"continuous_action": float32 (3K+2+2V,),
-               "discrete_action": int32 (K+1,)}``
-        """
-        return {
-            "continuous_action": np.zeros(self.n_continuous, dtype=np.float32),
-            "discrete_action": np.zeros(self.n_discrete, dtype=np.int32),
-        }
