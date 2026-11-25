@@ -25,9 +25,3 @@ Not allowed (disqualification risk): the gas-billing quirk, replaying simulator 
 | Hai | 4. Paper skeleton (OpenReview, final deadline 2027-01-15): related work + method outline | `paper/` | outline reviewed |
 
 Rules: one branch per person (`dat/...`, `hai/...`), merge into `dev` only with numbers in SCORES.md. Never edit another owner's files. Never commit `results/`. Full 8640-step runs only for comparisons.
-
-## Setup (Hai)
-```bash
-git clone https://github.com/datdooo/smart-buildings-2026.git && cd smart-buildings-2026 && git checkout dev && uv sync
-```
-Note: `sadr` saves its results under `.../transfer/` (its class name), not `.../sadr/`.
