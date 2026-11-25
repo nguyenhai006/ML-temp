@@ -1,0 +1,7 @@
+Found 1 scenario config directories.
+
+================================================================================
+Scenario: smart_buildings\validation_scenarios\building_12004\fairbanks_3
+Config: smart_buildings\validation_scenarios\building_12004\fairbanks_3\config.gin
+================================================================================
+Running pid_water...

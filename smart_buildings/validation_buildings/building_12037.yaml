@@ -1,0 +1,25 @@
+name: building_12037
+seed: 12037
+floor_plan:
+  width: 355
+  height: 225
+  num_floors: 2
+  min_room_size: 32
+  max_room_size: 46
+  building_shape: composite
+  shape_ratio: 0.37433513598726836
+  composite_coverage: 0.7727878920604164
+  composite_style: architectural
+ahu:
+  num_ahus: 7
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.3937
+  exterior_cv_density: 562.6552
+  interior_mass_cv_density: 18.1199
+  interior_wall_cv_conductivity: 0.5597
+  interior_wall_cv_density: 303.8394
+  exterior_cv_heat_capacity: 997.9704

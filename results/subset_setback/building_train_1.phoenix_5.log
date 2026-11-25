@@ -1,0 +1,19 @@
+Found 1 scenario config directories.
+
+================================================================================
+Scenario: smart_buildings\training_scenarios\building_train_1\phoenix_5
+Config: smart_buildings\training_scenarios\building_train_1\phoenix_5\config.gin
+================================================================================
+Running setback...
+Saving charts...
+Saving data...
+Total reward: -401.42
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+building_train_1\phoenix_5:
+  setback     : reward= -401.42
+
+All results saved to: results\subset_setback

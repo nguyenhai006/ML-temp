@@ -1,0 +1,21 @@
+{
+  "setback": {
+    "policy": "setback",
+    "total_reward": -144.7106371158152,
+    "total_steps": 8640,
+    "avg_reward": -0.01674891633284898,
+    "avg_occupancy": 29.337847222222223,
+    "avg_zone_temp": 293.9367790894471,
+    "productivity_weight": 0.6,
+    "energy_weight": 0.2,
+    "carbon_weight": 0.2,
+    "total_normalized_productivity_regret": -78.67579850303446,
+    "total_normalized_energy_cost": 167.48084426766582,
+    "total_normalized_carbon_emission": 320.0449458891235,
+    "seconds_per_step": 0.2013603530548237,
+    "n_discrete_action": 10,
+    "n_continuous_action": 199,
+    "num_zone_temp_features": 85,
+    "num_ahus": 9
+  }
+}

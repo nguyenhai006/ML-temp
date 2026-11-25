@@ -1,0 +1,19 @@
+Found 1 scenario config directories.
+
+================================================================================
+Scenario: smart_buildings\training_scenarios\building_train_2\denver_8
+Config: smart_buildings\training_scenarios\building_train_2\denver_8\config.gin
+================================================================================
+Running setback...
+Saving charts...
+Saving data...
+Total reward: -144.71
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+building_train_2\denver_8:
+  setback     : reward= -144.71
+
+All results saved to: results\subset_setback

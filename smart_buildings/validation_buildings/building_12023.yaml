@@ -1,0 +1,25 @@
+name: building_12023
+seed: 12023
+floor_plan:
+  width: 358
+  height: 298
+  num_floors: 3
+  min_room_size: 47
+  max_room_size: 63
+  building_shape: composite
+  shape_ratio: 0.28055816800676786
+  composite_coverage: 0.7516286276718845
+  composite_style: architectural
+ahu:
+  num_ahus: 4
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.1776
+  exterior_cv_density: 1244.581
+  interior_mass_cv_density: 37.139
+  interior_wall_cv_conductivity: 0.4631
+  interior_wall_cv_density: 276.3844
+  exterior_cv_heat_capacity: 904.4315

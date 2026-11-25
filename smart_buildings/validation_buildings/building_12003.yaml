@@ -1,0 +1,25 @@
+name: building_12003
+seed: 12003
+floor_plan:
+  width: 340
+  height: 200
+  num_floors: 4
+  min_room_size: 31
+  max_room_size: 46
+  building_shape: composite
+  shape_ratio: 0.3448569231894577
+  composite_coverage: 0.8152067494310524
+  composite_style: architectural
+ahu:
+  num_ahus: 6
+simulation:
+  start_timestamp: 2023-07-10 06:00
+  num_days_in_episode: 30
+  occupants_per_zone: 2
+materials:
+  exterior_cv_conductivity: 0.4308
+  exterior_cv_density: 1111.5088
+  interior_mass_cv_density: 11.5869
+  interior_wall_cv_conductivity: 0.4787
+  interior_wall_cv_density: 495.6957
+  exterior_cv_heat_capacity: 841.1852

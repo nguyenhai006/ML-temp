@@ -46,6 +46,7 @@ from smart_buildings.baselines.pid import PIDPolicy
 from smart_buildings.baselines.pid_plus import PIDWaterResetPolicy
 from smart_buildings.baselines.transfer_policy import TransferPolicy
 from smart_buildings.baselines.setback_policy import SetbackPolicy
+from smart_buildings.baselines.sadr_policy import TransferPolicy as SadrPolicy
 
 # Gin registration imports. These are intentionally kept even if not directly
 # referenced below, because gin needs the configurables to be imported before
@@ -92,6 +93,7 @@ from smart_buildings.smart_control.utils.scenario_generator import (
 POLICY_MAP: dict[str, type[Any]] = {
     "transfer": TransferPolicy,
     "setback": SetbackPolicy,
+    "sadr": SadrPolicy,
     # The baseline set.
     "bang_bang": BangBangPolicy,
     "fixed_setpoint": FixedSetpointPolicy,

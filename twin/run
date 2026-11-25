@@ -1,0 +1,6 @@
+#!/bin/sh
+# Keep native libraries single-threaded and all optional caches in the spike.
+export PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMBA_NUM_THREADS=1
+export NUMBA_CACHE_DIR="$PWD/twin/.cache/numba" MPLCONFIGDIR="$PWD/twin/.cache/mpl"
+exec .venv/bin/python -B "$@"

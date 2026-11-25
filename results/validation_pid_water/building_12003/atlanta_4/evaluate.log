@@ -1,0 +1,7 @@
+Found 1 scenario config directories.
+
+================================================================================
+Scenario: smart_buildings\validation_scenarios\building_12003\atlanta_4
+Config: smart_buildings\validation_scenarios\building_12003\atlanta_4\config.gin
+================================================================================
+Running pid_water...

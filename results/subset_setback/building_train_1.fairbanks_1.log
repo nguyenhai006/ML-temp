@@ -1,0 +1,19 @@
+Found 1 scenario config directories.
+
+================================================================================
+Scenario: smart_buildings\training_scenarios\building_train_1\fairbanks_1
+Config: smart_buildings\training_scenarios\building_train_1\fairbanks_1\config.gin
+================================================================================
+Running setback...
+Saving charts...
+Saving data...
+Total reward: -934.51
+
+============================================================
+FINAL RESULTS SUMMARY
+============================================================
+
+building_train_1\fairbanks_1:
+  setback     : reward= -934.51
+
+All results saved to: results\subset_setback
